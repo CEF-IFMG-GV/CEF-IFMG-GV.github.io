@@ -21,6 +21,13 @@ emailjs.init("Y2p4-JQhyVwsirKI7");
 
 const EMAILS_DESTINO = [
   "0117389@academico.ifmg.edu.br"
+  "rodriguesesdh@gmail.com"
+  "mariaeduarda231567@gmail.com"
+  "mimijack423@gmail.com"
+  "jubyey@gmail.com"
+  "ferreiralarissa76629@gmail.com"
+  "lailavboas@outlook.com"
+  "matheusalvesbatista47@gmail.com"
 ];
 
 const form = document.querySelector("form[data-atividade]");
@@ -37,6 +44,7 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const nome = form.querySelector("[name=nome]").value;
+  const ra = form.querySelector("[name=ra]").value;
   const ano = form.querySelector("[name=ano]").value;
   const curso = form.querySelector("[name=curso]").value;
   const dia = document.getElementById("data-selecionada").value;
@@ -48,8 +56,6 @@ form.addEventListener("submit", async (e) => {
     return;
   }
 
-  // Monta a checagem de conflito: se tiver tabuleiro, checa o tabuleiro específico;
-  // se não (sinuca/ping-pong), checa só dia+horário mesmo
   const condicoes = [
     where("atividade", "==", atividade),
     where("dia", "==", dia),
@@ -66,7 +72,7 @@ form.addEventListener("submit", async (e) => {
   }
 
   const dadosAgendamento = {
-    nome, ano, curso, dia, horario, atividade,
+    nome, ra, ano, curso, dia, horario, atividade,
     criadoEm: serverTimestamp(),
     expiraEm: Timestamp.fromDate(calcularExpiraEm(dia, horario))
   };
@@ -78,6 +84,7 @@ form.addEventListener("submit", async (e) => {
     emailjs.send("service_irheu35", "template_war4di4", {
       to_email: email,
       nome: nome,
+      ra: ra,
       ano: ano,
       curso: curso,
       atividade: atividade,
