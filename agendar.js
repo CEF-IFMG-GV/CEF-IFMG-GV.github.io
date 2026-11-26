@@ -20,13 +20,13 @@ function mostrarPopup(mensagem, redirecionarParaHome) {
 emailjs.init("Y2p4-JQhyVwsirKI7");
 
 const EMAILS_DESTINO = [
-  "0117389@academico.ifmg.edu.br"
-  "rodriguesesdh@gmail.com"
-  "mariaeduarda231567@gmail.com"
-  "mimijack423@gmail.com"
-  "jubyey@gmail.com"
-  "ferreiralarissa76629@gmail.com"
-  "lailavboas@outlook.com"
+  "0117389@academico.ifmg.edu.br",
+  "rodriguesesdh@gmail.com",
+  "mariaeduarda231567@gmail.com",
+  "mimijack423@gmail.com",
+  "jubyey@gmail.com",
+  "ferreiralarissa76629@gmail.com",
+  "lailavboas@outlook.com",
   "matheusalvesbatista47@gmail.com"
 ];
 
