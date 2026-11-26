@@ -81,7 +81,7 @@ form.addEventListener("submit", async (e) => {
   await addDoc(collection(db, "agendamentos"), dadosAgendamento);
 
   EMAILS_DESTINO.forEach(function (email) {
-    emailjs.send("service_irheu35", "template_war4di4", {
+    emailjs.send("service_ssk1rhr", "template_war4di4", {
       to_email: email,
       nome: nome,
       ra: ra,
