@@ -17,7 +17,7 @@ function mostrarPopup(mensagem, redirecionarParaHome) {
   };
 }
 
-emailjs.init("Y2p4-JQhyVwsirKI7");
+emailjs.init("ZYnnibvkmlqB5UaeP");
 
 // Um e-mail entre aspas por linha, com vírgula depois de cada um (menos o último)
 const EMAILS_DESTINO = [
@@ -44,7 +44,7 @@ async function enviarAvisos(dados) {
   for (let i = 0; i < EMAILS_DESTINO.length; i++) {
     const email = EMAILS_DESTINO[i];
     try {
-      await emailjs.send("service_irheu35", "template_war4di4", {
+      await emailjs.send("service_09v7eu9", "template_l1b54gq", {
         to_email: email,
         ...dados
       });
