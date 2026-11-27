@@ -21,7 +21,7 @@ emailjs.init("Y2p4-JQhyVwsirKI7");
 
 // Um e-mail entre aspas por linha, com vírgula depois de cada um (menos o último)
 const EMAILS_DESTINO = [
-  "mimijack423@gmail.com"
+  "0117389@academico.ifmg.edu.br"
 ];
 
 const form = document.querySelector("form[data-atividade]");
